@@ -104,7 +104,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
@@ -125,6 +124,10 @@ STATIC_ROOT = BASE_DIR /'static'
 STATICFILES_DIRS = [
     BASE_DIR / "big_chops/static",  # Ensure this folder actually exists
 ]
+
+# Media Configuration
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
